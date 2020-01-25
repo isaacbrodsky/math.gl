@@ -4,6 +4,7 @@ import assert from '../../lib/assert';
 
 export default class Vector extends MathArray {
   // VIRTUAL METHODS
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   copy(vector) {
     assert(false);
     return this;

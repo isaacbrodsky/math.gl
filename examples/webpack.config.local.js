@@ -5,6 +5,8 @@
 // This enables using the examples to debug the main library source
 // without publishing or npm linking, with conveniences such hot reloading etc.
 
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 const webpack = require('webpack');
 const resolve = require('path').resolve;
 const ALIASES = require('ocular-dev-tools/config/ocular.config')({

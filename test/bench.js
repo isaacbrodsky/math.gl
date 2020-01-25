@@ -18,6 +18,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 require('reify');
 
 const {Bench} = require('@probe.gl/bench');
@@ -36,7 +38,9 @@ suite
   // when running in browser, notify test the driver that it's done
   .then(() => {
     /* global window */
+    // @ts-ignore TS2339: Property 'browserTestDriver_finish' does not exist
     if (typeof window !== 'undefined' && window.browserTestDriver_finish) {
+      // @ts-ignore TS2339: Property 'browserTestDriver_finish' does not exist
       window.browserTestDriver_finish();
     }
   });

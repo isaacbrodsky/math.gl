@@ -41,6 +41,7 @@ const COMMON_CONFIG = {
 };
 
 function addDevConfig(config, env) {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
   config = require('../webpack.config.local')(config)(env);
   return config;
 }

@@ -9,7 +9,7 @@ import {
   fromCartographicToDegrees,
   toCartographicFromRadians,
   toCartographicFromDegrees
-} from '@math.gl/geospatial/type-utils';
+} from '@math.gl/geospatial/src/type-utils';
 
 const radianVector = [toRadians(45), toRadians(45), 10];
 

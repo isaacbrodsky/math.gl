@@ -72,7 +72,7 @@ test('Matrix3#setRowMajor', t => {
   const INPUT = INDICES_MATRIX;
   const RESULT = TRANSPOSED_INDICES_MATRIX;
 
-  const m = new Matrix3().setRowMajor(...INPUT);
+  const m = new Matrix3().setRowMajor(INPUT);
   tapeEquals(t, m, RESULT, 'setRowMajor gave the right result');
 
   t.end();
